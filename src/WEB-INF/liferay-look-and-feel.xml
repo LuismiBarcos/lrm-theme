@@ -14,6 +14,9 @@
 		<portlet-decorator id="barebone" name="Barebone">
 			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
 		</portlet-decorator>
+		<portlet-decorator id="tab-title" name="Tab title">
+			<portlet-decorator-css-class>portlet-tab-title</portlet-decorator-css-class>
+		</portlet-decorator>
 		<portlet-decorator id="borderless" name="Borderless">
 			<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
 		</portlet-decorator>

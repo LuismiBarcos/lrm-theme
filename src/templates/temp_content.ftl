@@ -250,6 +250,8 @@
 
     <#include "${full_templates_path}/videos.ftl" />
 
+    <#include "${full_templates_path}/chart.ftl" />
+
     <ul class="nav nav-pills nav-cubes">
         <li class="nav-item">
             <a class="nav-link" href="#">

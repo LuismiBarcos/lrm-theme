@@ -13,6 +13,8 @@
 
 @import "partials/grid";
 
+@import "partials/breadcrumb";
+
 @import "partials/nav";
 
 @import "partials/navbar";
@@ -27,4 +29,19 @@
 
 @import "partials/card";
 
-@import "partials/videos"
+@import "partials/videos";
+
+.body{
+    background-color: aquamarine;
+}
+
+.portlet-title-text {
+    color: $secondary;
+    line-height: 22px;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.portlet-layout .portlet-header {
+    margin-bottom: 4px;
+}

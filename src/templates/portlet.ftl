@@ -68,6 +68,10 @@
 					<div class="autofit-col autofit-col-expand">
 						<h2 class="portlet-title-text">${portlet_title}</h2>
 					</div>
+
+					<div class="autofit-col">
+						<a class="text-secondary small" href="#">Ver mas <@liferay_ui["icon"] icon="angle-right" markupView="lexicon" /></a>
+					</div>
 				</#if>
 
 				<#if portlet_header?has_content>

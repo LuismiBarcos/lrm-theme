@@ -22,4 +22,24 @@ $(document).ready(function() {
 			$(this).parents('li').toggleClass('open');
 		}
 	});
+	bb.generate({
+		data: {
+		  columns: [
+		  ["data1", 30, 200, 100, 400, 150, 250],
+		  ["data2", 130, 100, 140, 200, 150, 50]
+		  ],
+		  type: "bar"
+		},
+		bar: {
+		  width: {
+			ratio: 0.5
+		  }
+		},
+		grid: {
+			y: {
+			  show: true
+			}
+		},
+		bindto: "#bar-chart"
+	  });
 });

@@ -9,6 +9,10 @@
 
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
+	<link href="//cdnjs.cloudflare.com/ajax/libs/billboard.js/1.6.2/billboard.min.css" rel="stylesheet" type="text/css">
+	<link href="${javascript_folder}/vendor/clay-charts.css" rel="stylesheet" type="text/css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/billboard.js/1.6.2/billboard.pkgd.min.js"></script>
+
 	<@liferay_util["include"] page=top_head_include />
 </head>
 
@@ -34,7 +38,7 @@
 	<#if show_temp_content>
 		<#include "${full_templates_path}/temp_content.ftl" />
 	</#if>
-	<section class="container-fluid" id="content">
+	<section class="container" id="content">
 		<#if selectable>
 			<@liferay_util["include"] page=content_include />
 		<#else>

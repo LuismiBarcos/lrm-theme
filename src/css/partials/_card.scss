@@ -22,10 +22,29 @@
 		margin-bottom: 20px;
 	}
 
+	// Fix temporal para contenedor de journal article
+	> .journal-content-article {
+		flex-grow: 1;
+	}
+
 	@each $name, $breakpoint in $grid-breakpoints {
 		@media (min-width: $breakpoint) {
-			.card {
-				flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - #{$cards-grid-gutter-width});
+			.card,
+			//temporal journal-content-article
+			.journal-content-article {
+				flex: 0 0 calc(#{100/map-get($cards-per-line, $name)}% - 2px);
+			}
+		}
+	}
+}
+
+.card-deck-lrm-3-items {
+	@each $name, $breakpoint in $grid-breakpoints {
+		@media (min-width: $breakpoint) {
+			.card,
+			//temporal journal-content-article
+			.journal-content-article {
+				flex: 0 0 calc(#{100/map-get($cards-per-line-list, $name)}% - 0px);
 			}
 		}
 	}

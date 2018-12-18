@@ -10,12 +10,16 @@
     &::after {
 		background-color: $brand-color-light;
 		content: '';
-		height: 320px;
-		left: 0;
+        left: 0;
+        height: 153px;
 		position: absolute;
 		right: 0;
 		top: 100%;
-		z-index: -1;
+        z-index: -1;
+
+        @include media-breakpoint-up(lg) {
+            height: 320px;
+        }
 	}
 
     .nav-item {
@@ -58,7 +62,7 @@
                 background-color: $brand-color-light;
             }
         }
-                
+
         .lexicon-icon {
             padding: 3px;
         }
@@ -70,4 +74,6 @@
     .navbar-toggler-link:after {
         background-color: $brand-color;
     }
+
+    background-color: transparent;
 }
